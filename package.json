@@ -1,0 +1,26 @@
+{
+  "name": "promo-observer",
+  "version": "0.1.0",
+  "description": "App to observe promo on popular e-commerce sites",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piotrjanczak/promo-observer.git"
+  },
+  "keywords": [
+    "Promo"
+  ],
+  "author": "Piotr Janczak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piotrjanczak/promo-observer/issues"
+  },
+  "homepage": "https://github.com/piotrjanczak/promo-observer#readme",
+  "dependencies": {
+    "koa": "^2.11.0"
+  }
+}
