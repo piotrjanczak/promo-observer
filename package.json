@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "nodemon src/server/index.js",
     "start": "node src/server/index.js",
-    "test": "npm run lint && echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix 'src/**/*.js'"
+    "test": "npm run test:lint && npm run test:markdownlint && echo \"Error: no test specified\" && exit 1",
+    "test:lint": "eslint --fix 'src/**/*.js'",
+    "test:markdownlint": "markdownlint '*.md'"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
+    "markdownlint": "^0.20.2",
     "nodemon": "^2.0.3"
   }
 }
