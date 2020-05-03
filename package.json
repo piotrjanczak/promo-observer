@@ -4,6 +4,7 @@
   "description": "App to observe promo on popular e-commerce sites",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/server/index.js",
     "start": "node src/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +23,8 @@
   "homepage": "https://github.com/piotrjanczak/promo-observer#readme",
   "dependencies": {
     "koa": "^2.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
