@@ -6,9 +6,9 @@
   "scripts": {
     "dev": "nodemon src/server/index.js",
     "start": "node src/server/index.js",
-    "test": "npm run test:lint && npm run test:markdownlint && echo \"Error: no test specified\" && exit 1",
+    "test": "npm run test:lint && npm run test:markdownlint",
     "test:lint": "eslint --fix 'src/**/*.js'",
-    "test:markdownlint": "markdownlint '*.md'"
+    "test:markdownlint": "markdownlint '**/*.md' --ignore node_modules"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/piotrjanczak/promo-observer#readme",
   "dependencies": {
-    "koa": "^2.11.0"
+    "koa": "^2.11.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
