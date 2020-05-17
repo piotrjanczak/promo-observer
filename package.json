@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server/index.js",
-    "server:start": "forever src/server/index.js",
+    "server:start": "forever start src/server/index.js",
     "server:stop": "forever stop src/server/index.js",
     "test": "npm run test:lint && npm run test:markdownlint",
     "test:lint": "eslint --fix 'src/**/*.js'",
