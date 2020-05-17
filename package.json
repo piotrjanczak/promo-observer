@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/server/index.js",
-    "start": "node src/server/index.js",
+    "server:start": "forever src/server/index.js",
+    "server:stop": "forever stop src/server/index.js",
     "test": "npm run test:lint && npm run test:markdownlint",
     "test:lint": "eslint --fix 'src/**/*.js'",
     "test:markdownlint": "markdownlint '**/*.md' --ignore node_modules"
@@ -24,6 +25,7 @@
   },
   "homepage": "https://github.com/piotrjanczak/promo-observer#readme",
   "dependencies": {
+    "forever": "^2.0.0",
     "koa": "^2.11.0",
     "winston": "^3.2.1"
   },
