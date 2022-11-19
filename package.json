@@ -1,40 +1,18 @@
 {
   "name": "promo-observer",
   "version": "0.1.0",
-  "description": "App to observe promo on popular e-commerce sites",
+  "description": "Promo observer",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/server/index.js",
-    "server:start": "forever start src/server/index.js",
-    "server:stop": "forever stop src/server/index.js",
-    "test": "npm run test:lint && npm run test:markdownlint",
-    "test:lint": "eslint --fix 'src/**/*.js'",
-    "test:markdownlint": "markdownlint '**/*.md' --ignore node_modules"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/piotrjanczak/promo-observer.git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "Promo"
+    "promo"
   ],
   "author": "Piotr Janczak",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/piotrjanczak/promo-observer/issues"
-  },
-  "homepage": "https://github.com/piotrjanczak/promo-observer#readme",
   "dependencies": {
-    "cron": "^1.8.2",
-    "forever": "^2.0.0",
-    "koa": "^2.11.0",
-    "winston": "^3.2.1"
-  },
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "markdownlint": "^0.20.2",
-    "nodemon": "^2.0.3"
+    "node-fetch": "2.6.0",
+    "node-html-parser": "1.2.13"
   }
 }
